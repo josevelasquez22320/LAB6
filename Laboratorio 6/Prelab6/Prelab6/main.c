@@ -1,9 +1,12 @@
 /*
- * Prelab6.c
- *
- * Created: 23/04/2024 08:43:22
- * Author : josea
- */ 
+;UNIVERSIDAD DEL VALLE DE GUATEMALA
+;IE2023: PROGRAMACIÓN DE MICROCONTROLADORES
+;Lab2.asm
+;AUTOR: Jose Andrés Velásquez Gacía
+;PROYECTO: PRElab6
+;HARDWARE: ATMEGA328P
+;CREADO: 30/04/2024
+;ÚLTIMA MODIFICACIÓN: 30/04/2024 23:36*/
 
 #define  F_CPU 16000000
 #include <avr/io.h>
@@ -20,7 +23,7 @@ int main(void)
 {
 	initUART9600();
 	sei();
-	/*writeUART("H")
+	writeUART("H")
 	writeUART("O")
 	writeUART("L")
 	writeUART("A")
@@ -30,9 +33,7 @@ int main(void)
 	writeUART("N")
 	writeUART("D")
 	writeUART("O")
-	writeUART("/n")*/
-
-	writeTEXTUART("HOLA MUNDO XD!\n");
+	writeUART("/n")
 
 	DDRB = 0xFF;
 	PORTB = 0; 
